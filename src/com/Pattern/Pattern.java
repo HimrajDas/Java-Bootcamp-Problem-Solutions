@@ -2,7 +2,7 @@ package com.Pattern;
 
 public class Pattern {
     public static void main(String[] args) {
-        pattern31(4);
+        pattern1(5);
     }
     static void pattern1(int n) {
         for (int row = 1; row <= n; row++) {
@@ -115,4 +115,5 @@ public class Pattern {
             System.out.println();
         }
     }
+
 }

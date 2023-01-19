@@ -10,14 +10,15 @@ public class PrimeNumber {
         boolean ans = checkPrime(n);
         if (ans) System.out.println("It's a prime number.");
         else System.out.println("It's not a prime number.");
+        // boolean ans = isPrime(13);
     }
 
     static boolean checkPrime(int n) {
         if (n <= 1) return false;
         if (n == 2) return true;
 
-        for (int i = 2; i <= 10; i++) {
-            for (int j = 2; j <= n; j++) {
+        for (int i = 2; i < n; i++) {
+            for (int j = 2; j < n; j++) {
                 if (i * j == n) return false;
             }
         }
@@ -26,6 +27,8 @@ public class PrimeNumber {
     }
 
 
+    // very optimized solution.
+    // Time complexity --> root of n
     static boolean isPrime(int n) {
         if (n <= 1) {
             return false;
